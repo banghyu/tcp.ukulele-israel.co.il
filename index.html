@@ -88,5 +88,44 @@ a.hover{
 <font color="white" size="2">&copy; 2019 MrZhuID-Gresik Cyber Army</font></a>
 </p>
 <embed src="https://www.youtube.com/v/1-xGerv5FOk&autoplay=1&start=0" type="application/x-shockwave-flash" wmode="transparent" width="0" height="0"></embed>
-</body>
+<br><div style="text-align: center;"><script language="JavaScript">
+    var text="Tak perlu menyalahkan air mata, salahkan fikiranmu yang tak pernah mau melupakan masa lalumu.Kebehagiaan yang sesungguhnya ialah ketika kita mampu mengalahkan ego sendiri untuk kebahagiaan orang lain.Disini aku selalu menampakkan senyum padamu, agar kau tahu bahwa aku selalu tegar. Tapi sejatinya hatiku ini rapuh.Aku rela menyembunyikan semua sesalku, demi menjaga suasana yang mulai membaik. Kalau saja Allah ciptakan waktu berjalan 2 arah, maka aku akan kembali ke masa lalu untuk menghapus semua penyesalan ini."
+    var delay=90;
+    var currentChar=100;
+    var destination=[none];
+    function type()
+    {
+    //if (document.all)
+    {
+    var dest=document.getElementById(destination);
+    if (dest)// && dest.innerHTML)
+    {
+    dest.innerHTML=text.substr(0, currentChar)+"<blink>_</blink>";
+    currentChar++;
+    if (currentChar>text.length)
+    {
+    currentChar=1;
+    setTimeout("type()", 5000);
+    }
+    else
+    {
+    setTimeout("type()", delay);
+    }
+    }
+    }
+    }
+    function startTyping(textParam, delayParam, destinationParam)
+    {
+    text=textParam;
+    delay=delayParam;
+    currentChar=1;
+    destination=destinationParam;
+    type();
+    }
+    </script>
+    <b><font face="Charcoal"><div id="textDestination" style=" background-color: ; color:#00e2bd; style=" font: 50px arial; color: #00e2bd; margin: 0px;></div></b>
+
+    <script language="JavaScript">
+    javascript:startTyping(text, 50, "textDestination");
+    </script></div></body>
 </html>
